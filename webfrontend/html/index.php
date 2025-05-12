@@ -1,6 +1,6 @@
 <html>
  <head>
-  <title>PHP-Test</title>
+  <title>Jewishdeta</title>
  </head>
  <body>
  <?php echo '<p>jewish date converter plugin</p>'; ?>
