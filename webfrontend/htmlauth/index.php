@@ -427,9 +427,8 @@ $jewishMonth  = intval($jewishMonth);
 $jewishYear = intval($jewishYear);
 $daysinkislev= intval($daysinkislev);
 $leap = intval($leap);
-$list = array("Day"=> $jewishDay, "Month"=>$jewishMonth, "Year"=>$jewishYear, "DaysOfKislev"=>$daysinkislev, "LeapYear"=>$leap, ""=>$result);
-echo json_encode($list);
+//$list = array("Day"=> $jewishDay, "Month"=>$jewishMonth, "Year"=>$jewishYear, "DaysOfKislev"=>$daysinkislev, "LeapYear"=>$leap, ""=>$result);
+//echo json_encode($list);
 ?>
-version 2.1.0
  </body>
 </html>
