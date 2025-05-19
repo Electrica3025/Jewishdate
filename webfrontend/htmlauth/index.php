@@ -414,7 +414,51 @@ function ListhandlerLOX($jewishYear, $jewishMonth,$jewishDay, $daysinkislev){
 	return "Status: $event List A: $holidayFirstList List B: $holidaySecondList List C: $holidayThirdList  Name Holiday: $eventEN : $eventHE";
 }
 
+function NumbersToOtiyot($jewishYear, $jewishMonth,$jewishDay){
+	$jewishYearOt  = 0,
+	$jewishMonthOt = 0,
+	$jewishDayOt = 0,
 
+	return "יום $jewishDayOt $jewishMonthOt $jewishYearOt לפ\"ק"
+}
+function MonthName($Month){
+	$monthNumber = $Month,
+	$hodes = "",
+	if($month == 1){
+        $hodesh = "תשרי";}
+    if($month == 2){
+        $hodesh = "מרחשוון";}
+    if($month == 3){
+        $hodesh = "כסלו";}
+    if($month == 4){
+        $hodesh = "טבת";}
+    if($month == 5){
+        $hodesh = "שבט";}
+	if($month == 6){
+		$hodesh = "אדר א";}
+	if($month == 8){
+        $hodesh = "ניסן";}
+    if($month == 9){
+        $hodesh = "אייר";}
+    if($month == 10){
+        $hodesh = "סיון";}
+    if($month == 11){
+        $hodesh = "תמוז";}
+    if($month == 12){
+        $hodesh = "מנחם- אב";}
+    if($month == 13){
+        $hodesh = "אלול";}
+    
+    if($month == 7){
+        if($leapyear = 1){
+            $hodesh = "אדר ב";
+        }else{
+            $hodesh = "אדר";}
+    
+
+    return($hodesh)
+}
+	
 $jd = gregoriantojd(date("m"),date("d"),date("Y"));
 $jewishDate =  jdtojewish($jd, false);
 list($jewishMonth, $jewishDay, $jewishYear) = explode('/', $jewishDate);
