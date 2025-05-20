@@ -7,6 +7,7 @@
 $jd = gregoriantojd(date("m"),date("d"),date("Y"));
 $jewishDate =  jdtojewish($jd, false);
 $hebjewishDate = jdtojewish($jd, true, CAL_JEWISH_ADD_GERESHAYIM);
+$hebjewishDate = iconv ('WINDOWS-1255', 'UTF-8', $hebjewishDate);
 echo $hebjewishDate;
 ?>
 <br>	
@@ -425,8 +426,6 @@ function ListhandlerLOX($jewishYear, $jewishMonth,$jewishDay, $daysinkislev){
 	
 $jd = gregoriantojd(date("m"),date("d"),date("Y"));
 $jewishDate =  jdtojewish($jd, false);
-//$hebjewishDate = jdtojewish($jd, true, CAL_JEWISH_ADD_GERESHAYIM);
-//echo $hebjewishDate
 list($jewishMonth, $jewishDay, $jewishYear) = explode('/', $jewishDate);
 $daysinkislev = cal_days_in_month(CAL_JEWISH, 3, $jewishYear);
 $leap =  isJewishLeapYear( $jewishYear);
