@@ -406,6 +406,39 @@ function ListhandlerLOX($jewishYear, $jewishMonth,$jewishDay, $daysinkislev){
 		$eventHE = "ערב ראש השנה";
 		$event = 1;$holidaySecondList =1;} 
 
+	//ראש חודש
+	if ($jewishDay== 29 & $jewishMonth != 13)‎{
+	 	if ($DayOfTheWeek != 5 || $DayOfTheWeek != 6){
+			if ($jewishMonth != 3){
+			$eventEN = "Erev Rosh Hodesh Yomkipur Katan";
+			$eventHE = "יום כיפור קטן -ערב ראש חודש";
+			$event = 0;$holidaySecondList =0;}}}
+	 if ($jewishDay== 30 & $DayOfTheWeek != 6){
+		 if ($jewishMonth != 3){
+	 		$eventEN = "Rosh Hodesh";
+			$eventHE = "ראש חודש";
+			$event = 0;$holidaySecondList =0;}} 
+	if ($jewishDay== 30 & $DayOfTheWeek == 6){
+	 	$eventEN = "Shabbes Rosh Hodesh";
+		$eventHE = "שבת ראש חודש";
+		$event = 0;$holidaySecondList =0;} 
+	if ($jewishDay== 1 & $jewishMonth != 1){
+		if ($DayOfTheWeek != 6){
+	 		$eventEN = "Rosh Hodesh";
+			$eventHE = "ראש חודש";
+			$event = 0;$holidaySecondList =0;} }
+	if ($jewishDay== 1 & $DayOfTheWeek == 6){
+		if ($jewishMonth != 1 || $jewishMonth != 4 ){‎
+	 		$eventEN = "Shabbes Rosh Hodesh";
+			$eventHE = "שבת ראש חודש";
+			$event = 0;$holidaySecondList =0;} }
+	 if ($jewishDay== 28 & $DayOfTheWeek == 4){
+		 if ($jewishMonth != 3){
+	 		$eventEN = "Yom kipur katan mukdam";
+			$eventHE = "יום כיפור קטן מוקדם";
+			$event = 0;$holidaySecondList =0;}} 
+
+	
 	//כללי
 	if ($diaspora == 0){
 		if ($event == 2 & $holidaySecondList != 2){
