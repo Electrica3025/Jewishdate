@@ -131,8 +131,8 @@ function ListhandlerLOX($jewishYear, $jewishMonth,$jewishDay, $daysinkislev){
 	if ($holidaySecondList == 10 & $DayOfTheWeek == 5){
 		$eventEN = "erev Shabbes Chol Hamoed Sukkot";
 		$eventHE = "ערב שבת חול המועד סוכות";
-		$event = 5; $holidayThirdList = 7;}‏
-  if ($holidaySecondList == 10 & $DayOfTheWeek == 6){
+		$event = 5; $holidayThirdList = 7;}
+	if ($holidaySecondList == 10 & $DayOfTheWeek == 6){
    		$eventEN = "Sabbes Chol Hamoed Sukkot";
 		$eventHE = "שבת חול המועד סוכות";
 		$event = 5; $holidayThirdList = 8;}	
@@ -428,7 +428,7 @@ function ListhandlerLOX($jewishYear, $jewishMonth,$jewishDay, $daysinkislev){
 		$event = 1;$holidaySecondList =1;} 
 
 	//ראש חודש
-	if ($jewishDay== 29 & $jewishMonth != 13)‎{
+	if ($jewishDay== 29 & $jewishMonth != 13){
 	 	if ($DayOfTheWeek != 5 || $DayOfTheWeek != 6){
 			if ($jewishMonth != 3){
 			$eventEN = "Erev Rosh Hodesh Yomkipur Katan";
@@ -449,8 +449,8 @@ function ListhandlerLOX($jewishYear, $jewishMonth,$jewishDay, $daysinkislev){
 			$eventHE = "ראש חודש";
 			$event = 0;$holidaySecondList =0;} }
 	if ($jewishDay== 1 & $DayOfTheWeek == 6){
-		if ($jewishMonth != 1 || $jewishMonth != 4 ){‎
-	 		$eventEN = "Shabbes Rosh Hodesh";
+		if ($jewishMonth != 1 || $jewishMonth != 4 ){
+			$eventEN = "Shabbes Rosh Hodesh";
 			$eventHE = "שבת ראש חודש";
 			$event = 0;$holidaySecondList =0;} }
 	 if ($jewishDay== 28 & $DayOfTheWeek == 4){
