@@ -12,9 +12,6 @@ echo $hebjewishDate;
 ?>
 <br>	
  <?php
-/* 
-version 2.0.0
-*/
 
 function isJewishLeapYear($year) {
   if ($year % 19 == 0 || $year % 19 == 3 || $year % 19 == 6 ||
@@ -497,7 +494,7 @@ $daysinkislev= intval($daysinkislev);
 $leap = intval($leap);
 //$list = array("Day"=> $jewishDay, "Month"=>$jewishMonth, "Year"=>$jewishYear, "DaysOfKislev"=>$daysinkislev, "LeapYear"=>$leap, ""=>$result);
 //echo json_encode($list);
-echo "<br> Version 2.8";
+echo "<br> Version 2.9";
 ?>
  </body>
 </html>
