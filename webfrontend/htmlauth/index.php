@@ -131,10 +131,12 @@ function ListhandlerLOX($jewishYear, $jewishMonth,$jewishDay, $daysinkislev){
 	if ($holidaySecondList == 10 & $DayOfTheWeek == 5){
 		$eventEN = "erev Shabbes Chol Hamoed Sukkot";
 		$eventHE = "ערב שבת חול המועד סוכות";
+		$holidaySecondList = 0;
 		$event = 5; $holidayThirdList = 7;}
-  if ($holidaySecondList = 10 & $DayOfTheWeek == 6){
+  if ($holidaySecondList == 10 & $DayOfTheWeek == 6){
    		$eventEN = "Sabbes Chol Hamoed Sukkot";
 		$eventHE = "שבת חול המועד סוכות";
+	 	$holidaySecondList = 0;
 		$event = 5; $holidayThirdList = 8;}	
 		//חשוון
 		//כסליו
@@ -325,17 +327,20 @@ function ListhandlerLOX($jewishYear, $jewishMonth,$jewishDay, $daysinkislev){
 			$eventHE = "אחרון של פסח - יזכור";
 			$event = 3;$holidayFirstList =7;}
 	}
-	if ($holidayFirstList =4 & $DayOfTheWeek == 5){
+	if ($holidayFirstList == 4 & $DayOfTheWeek == 5){
 		$eventEN = "erev Shabbes Chol Hamoed Pesach";
 		$eventHE = "ערב שבת חול המועד פסח";
+		$holidayFirstList = 0;
 		$event = 5; $holidayThirdList = 10;}	
-	if ($holidayFirstList =4 & $DayOfTheWeek == 6){
+	if ($holidayFirstList == 4 & $DayOfTheWeek == 6){
 		$eventEN = "Sabbes Chol Hamoed Pesach";
 		$eventHE = "שבת חול המועד פסח";
+		$holidayFirstList = 0;
 		$event = 5; $holidayThirdList = 10;}
-	if ($holidayFirstList =5 & $DayOfTheWeek == 6){
+	if ($holidayFirstList == 5 & $DayOfTheWeek == 6){
 		$eventEN = "Shabbes Erev Shvihy shel Pesach";
 		$eventHE = "שבת ערב שביעי של פסח";
+		$holidayFirstList = 0;
 		$event = 5; $holidayThirdList = 11;}	
 	//אייר
     if ($jewishDay== 14 & $jewishMonth== 9){
