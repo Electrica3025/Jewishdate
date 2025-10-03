@@ -122,7 +122,7 @@ function ListhandlerLOX($jewishYear, $jewishMonth,$jewishDay, $daysinkislev){
 	if($jewishDay== 23 & $jewishMonth== 1) {
         $eventEN = "Simchat Torah";
 		$eventHE = "שמחת תורה";
-		$event = 3; $holidaySecondList = 12;}
+		$event = 3; $holidaySecondList = 13;}
 	}
 	//ערב שבת חוה"מ סוכות
 	if ($holidaySecondList == 10 & $DayOfTheWeek == 5){
