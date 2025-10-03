@@ -60,7 +60,7 @@ function ListhandlerLOX($jewishYear, $jewishMonth,$jewishDay, $daysinkislev){
     if ($jewishDay== 10 & $jewishMonth== 1){
 		$eventEN = "Yom Kippur (Yizkor)";
 		$eventHE = "יום כיפור - יזכור";
-		$event = 3; $holidaySecondList = 5;}
+		$event = 3; $holidaySecondList = 6;}
     if ($jewishDay== 14 & $jewishMonth == 1){
 		$eventEN = "Erev Sukkot";
 		$eventHE = "ערב סוכות";
